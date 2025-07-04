@@ -1,7 +1,7 @@
 package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dtos.OrderDetailsDTO;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ public class OrderDetailsModel {
 
 
     private boolean saveOrderDetails(OrderDetailsDTO dto) throws SQLException, ClassNotFoundException {
-        return CrudUtil.execute(
+        return SQLUtil.execute(
                 "insert into order_details values (?,?,?,?)",
                 dto.getOrderId(),
                 dto.getItemId(),

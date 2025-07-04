@@ -1,7 +1,6 @@
 package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -9,10 +9,10 @@ import java.sql.Date;
 @NoArgsConstructor
 @Data
 
-public class CommonPassword {
-
-    private int userId;
-    private String password;
-
+public class AdditionalLeaveCoach {
+    private int leaveId;
+    private String coachId;
+    private String systemUserId;
+    private Date leaveDate;
 
 }

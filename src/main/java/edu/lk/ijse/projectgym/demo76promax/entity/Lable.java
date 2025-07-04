@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+public class Lable {
 
-public class CommonPassword {
-
-    private int userId;
-    private String password;
-
-
+    private int lableId;
+    private String massege ;
 }

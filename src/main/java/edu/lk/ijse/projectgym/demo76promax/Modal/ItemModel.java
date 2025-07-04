@@ -2,7 +2,7 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dtos.ItemDTO;
 import  edu.lk.ijse.projectgym.demo76promax.Dtos.OrderDetailsDTO;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ItemModel {
     public ArrayList<String> getAllItemIds() throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.execute(
+        ResultSet rst = SQLUtil.execute(
                 "select item_id from items"
         );
         ArrayList<String> list = new ArrayList<>();
@@ -23,7 +23,7 @@ public class ItemModel {
     }
 
     public ItemDTO findById(String itemId) throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.execute(
+        ResultSet rst = SQLUtil.execute(
                 "select * from items where item_id=?",
                 itemId
         );
@@ -41,7 +41,7 @@ public class ItemModel {
     }
 
     public boolean reduceQty(OrderDetailsDTO orderDetailsDTO) throws SQLException, ClassNotFoundException {
-        return CrudUtil.execute(
+        return SQLUtil.execute(
                 "update items set qty = qty-? where item_id=?",
                 orderDetailsDTO.getQty(),
                 orderDetailsDTO.getItemId()

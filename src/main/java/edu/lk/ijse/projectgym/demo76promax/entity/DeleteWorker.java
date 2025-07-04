@@ -8,11 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class SystemUser {
-    private String userId;
-    private String password;
-    private String systemrole;
-    private String systemUsername;
-    private String contactNumber;
 
+public class DeleteWorker {
+    private int deleteId;
+    private String workerId;
+    private String workername;
+    private String deleteDate;
+    private String SystemUserId;
+    private Text ResonTodelete;
 }

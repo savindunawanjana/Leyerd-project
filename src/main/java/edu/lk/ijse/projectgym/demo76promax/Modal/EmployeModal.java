@@ -2,7 +2,7 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 import edu.lk.ijse.projectgym.demo76promax.Dtos.EmployeDto;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -117,7 +117,7 @@ public class EmployeModal {
 
         Connection connection = Dbconnection.getObject().getConnection();
         String sql = "SELECT COUNT(*) AS employee_count FROM coaches";
-        ResultSet resultSet = CrudUtil.execute(sql);
+        ResultSet resultSet = SQLUtil.execute(sql);
 
         if (resultSet.next()) {
             return resultSet.getInt("employee_count");
@@ -132,7 +132,7 @@ public class EmployeModal {
         Connection connection = Dbconnection.getObject().getConnection();
         String sql = "SELECT COUNT(*) AS employee_count FROM worker";
        // String sql = "SELECT COUNT(*) AS employee_count FROM coaches";
-        ResultSet resultSet = CrudUtil.execute(sql);
+        ResultSet resultSet = SQLUtil.execute(sql);
 
         if (resultSet.next()) {
             return resultSet.getInt("employee_count");

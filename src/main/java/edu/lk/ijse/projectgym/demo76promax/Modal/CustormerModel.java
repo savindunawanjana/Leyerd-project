@@ -2,7 +2,7 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 import edu.lk.ijse.projectgym.demo76promax.Dtos.CustermerDto;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -114,7 +114,7 @@ public class CustormerModel {
     }
 
     public ArrayList<String> getAllCustomerIds() throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.execute(
+        ResultSet rst = SQLUtil.execute(
                 "select  customer_id from customer"
         );
         ArrayList<String> list = new ArrayList<>();
@@ -127,7 +127,7 @@ public class CustormerModel {
     }
 
     public String findNameById(String customerId) throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.execute(
+        ResultSet rst = SQLUtil.execute(
                 "select customer_name from customer where customer_id =?",
                 customerId
         );
@@ -138,7 +138,7 @@ public class CustormerModel {
     }
 
     public String findEmailById(String customerId) throws SQLException, ClassNotFoundException {
-        ResultSet rst = CrudUtil.execute(
+        ResultSet rst = SQLUtil.execute(
                 "SELECT customer_email FROM customer WHERE customer_id = ?",
                 customerId
         );

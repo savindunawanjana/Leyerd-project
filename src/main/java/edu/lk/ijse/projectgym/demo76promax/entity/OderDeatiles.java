@@ -1,18 +1,21 @@
 package edu.lk.ijse.projectgym.demo76promax.entity;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 
-public class CommonPassword {
+public class OderDeatiles {
 
-    private int userId;
-    private String password;
-
+    private String orderId;
+    private String ItemId;
+    private int quantity;
+    private BigDecimal price;
 
 }

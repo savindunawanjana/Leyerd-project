@@ -2,7 +2,7 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 import edu.lk.ijse.projectgym.demo76promax.Dtos.SystemUser;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.sql.*;
@@ -45,12 +45,12 @@ public class Registetionmodal {
 
     public boolean deleteMember(String id) throws SQLException, ClassNotFoundException {
         String sql = "DELETE FROM system_user WHERE user_id = ?";
-        return CrudUtil.execute(sql, id);
+        return SQLUtil.execute(sql, id);
     }
 
     public boolean updateuserMethod(SystemUser object) throws SQLException, ClassNotFoundException {
         String sql = "UPDATE system_user SET user_password = ?, user_role = ?, user_name = ?, phone_number = ? WHERE user_id = ?";
-        return CrudUtil.execute(sql,
+        return SQLUtil.execute(sql,
                 object.getUser_password(),
                 object.getUser_Roll(),
                 object.getUser_Name(),

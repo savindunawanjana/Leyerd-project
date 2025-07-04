@@ -2,7 +2,7 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 import edu.lk.ijse.projectgym.demo76promax.Dtos.OrderDTO;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -13,7 +13,7 @@ public class OderModel {
     private final OrderDetailsModel orderDetailsModel = new OrderDetailsModel();
 
     public String getNextOrderId() throws SQLException, ClassNotFoundException {
-        ResultSet resultSet = CrudUtil.execute(
+        ResultSet resultSet = SQLUtil.execute(
                 "select order_id from orders order by order_id desc limit 1"
         );
 
@@ -34,7 +34,7 @@ public class OderModel {
         Connection connection = Dbconnection.getObject().getConnection();
         try {
             connection.setAutoCommit(false);
-            boolean isSave = CrudUtil.execute(
+            boolean isSave = SQLUtil.execute(
                     "insert into orders values (?,?,?)",
                     orderDTO.getOrderId(),
                     orderDTO.getCustomerId(),

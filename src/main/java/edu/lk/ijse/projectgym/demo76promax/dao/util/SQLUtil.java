@@ -1,4 +1,4 @@
-package edu.lk.ijse.projectgym.demo76promax.Util;
+package edu.lk.ijse.projectgym.demo76promax.dao.util;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 
@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CrudUtil {
+public class SQLUtil {
 
     public static <T> T execute(String sql, Object... params) throws SQLException, ClassNotFoundException {
         Connection connection = Dbconnection.getObject().getConnection();

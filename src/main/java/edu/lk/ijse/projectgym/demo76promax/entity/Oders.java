@@ -4,15 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.sql.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 
-public class CommonPassword {
+public class Oders {
 
-    private int userId;
-    private String password;
+    private String orderId;
+    private String customerId;
+    private Date OderDate;
+
 
 
 }

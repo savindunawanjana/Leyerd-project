@@ -2,13 +2,11 @@ package edu.lk.ijse.projectgym.demo76promax.Modal;
 
 import edu.lk.ijse.projectgym.demo76promax.Dbconnection.Dbconnection;
 import edu.lk.ijse.projectgym.demo76promax.Dtos.EmployeeDataDto;
-import edu.lk.ijse.projectgym.demo76promax.Util.CrudUtil;
+import edu.lk.ijse.projectgym.demo76promax.dao.util.SQLUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class EmployeedataModel {
 
@@ -21,7 +19,7 @@ public class EmployeedataModel {
         EmployeeDataDto employeeDataDto;
         String sql = "SELECT ALL * FROM  employees_table";
 
-        ResultSet resultSet = CrudUtil.execute(sql);
+        ResultSet resultSet = SQLUtil.execute(sql);
 
         while (resultSet.next()) {
             employeeDataDto = new EmployeeDataDto(
