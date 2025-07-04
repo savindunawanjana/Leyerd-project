@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancpane" prefHeight="1001.0" prefWidth="1438.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.addCustermer">
+   <ImageView fx:id="imegeViewId" fitHeight="977.0" fitWidth="1489.0" layoutY="28.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../imege/custormer.jpg" />
+      </image>
+   </ImageView>
+
+     <GridPane hgap="10" layoutX="397.0" layoutY="318.0" prefHeight="503.0" prefWidth="539.0" vgap="10">
+         <Label text="Customer ID:" textFill="#070404" GridPane.columnIndex="0" GridPane.rowIndex="0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="TextCid" onAction="#TextCidAction" prefHeight="51.0" prefWidth="187.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Name:" textFill="#221e1e" GridPane.columnIndex="0" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtCustomerName" onAction="#txtCustomerNameAction" prefHeight="52.0" prefWidth="199.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Address:" textFill="#070505" GridPane.columnIndex="0" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtCustomerAddress" onAction="#txtCustomerAddressAction" prefHeight="50.0" prefWidth="205.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Contact Number:" textFill="#221d1d" GridPane.columnIndex="0" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtContactNumber" onAction="#txtContactNumberCtion" prefHeight="51.0" prefWidth="213.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Birthday Month:" textFill="#282323" GridPane.columnIndex="0" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtBirthdayMonth" onAction="#txtBirthdayMonthCtion" prefHeight="49.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Weight (kg):" textFill="#322d2d" GridPane.columnIndex="0" GridPane.rowIndex="5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtWeight" onAction="#txtWeightAction" prefHeight="48.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Email Address:" textFill="#322b2b" GridPane.columnIndex="0" GridPane.rowIndex="6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtEmail" onAction="#txtEmailAction" prefHeight="51.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+
+         <Label text="Register Fees:" textFill="#282424" GridPane.columnIndex="0" GridPane.rowIndex="7">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+         <TextField fx:id="txtRegisterFees" onAction="#txtRegisterFeesAction" prefHeight="51.0" prefWidth="417.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints maxHeight="55.0" minHeight="52.0" prefHeight="52.0" />
+         <RowConstraints maxHeight="101.0" minHeight="53.0" prefHeight="56.0" />
+         <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="45.0" />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+     </GridPane>
+
+    <VBox layoutX="229.0" layoutY="153.0" spacing="15">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+    </VBox>
+
+     <Button fx:id="btnsave" layoutX="1324.0" layoutY="861.0" onAction="#clickBtnToSaveCustomer" prefHeight="59.0" prefWidth="114.0" style="-fx-font-weight: bold;" text="Save">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </Button>
+   <Label layoutX="333.0" layoutY="21.0" prefHeight="149.0" prefWidth="782.0" text="Add custormer to the system " textFill="#362b2b">
+      <font>
+         <Font size="48.0" />
+      </font>
+   </Label>
+</AnchorPane>

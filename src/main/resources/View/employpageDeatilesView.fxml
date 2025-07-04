@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpaneOne" prefHeight="848.0" prefWidth="1370.0" style="-fx-background-color: #A29BFEFF; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.employpageDeatilesController">
+   <children>
+      <Label layoutX="80.0" layoutY="40.0" text="Employee Management">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="67.0" layoutY="100.0" prefHeight="59.0" prefWidth="1364.0" spacing="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0">
+         <children>
+            <Label prefHeight="18.0" prefWidth="50.0" />
+            <VBox prefHeight="116.0" prefWidth="226.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 10;">
+               <children>
+                  <HBox fx:id="hboxCleanerManege1" alignment="CENTER" onMouseClicked="#onClenerManage" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/cleaner.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Clener Management" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="116.0" prefWidth="226.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 10;">
+               <children>
+                  <HBox fx:id="hboxCoachManege" alignment="CENTER" onMouseClicked="#onCoacherManage" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/coach.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Coaches Management" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="116.0" prefWidth="226.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 10;">
+               <children>
+                  <HBox fx:id="hboxPaymentManege" alignment="CENTER" onMouseClicked="#onEmployeePayments" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/payment.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Payment Management" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="116.0" prefWidth="226.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 10;">
+               <children>
+                  <HBox fx:id="hboxEmployeeDeatelsManegement" alignment="CENTER" onMouseClicked="#on_EmployeeDeatelsManegement" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/leave.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Employee deatals" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox fx:id="hboxEmployeeAtendans" alignment="CENTER" onMouseClicked="#On_EmployeeAtendans" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: F2F2F2;">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imege/cleaner.png" />
+                     </image>
+                  </ImageView>
+                  <Label style="-fx-background-color: F2F2F2;" text="Employee atendens" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="ancManagement" layoutX="148.0" layoutY="181.0" prefHeight="658.0" prefWidth="1292.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-153.0" AnchorPane.topAnchor="181.0" />
+   </children>
+</AnchorPane>

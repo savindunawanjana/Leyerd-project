@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancpaneLoginforsystem" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #0B192C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.loginForsystem">
+   <children>
+      <ImageView fitHeight="1343.0" fitWidth="2138.0" layoutX="-1.0" layoutY="106.0" opacity="0.46" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-199.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-328.0">
+         <image>
+            <Image url="@../imege/pexels-willpicturethis-1954524.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="613.0" layoutY="515.0" prefHeight="63.0" prefWidth="247.0" text="Password :" textFill="#85a69c">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfildloginpage" layoutX="860.0" layoutY="515.0" onAction="#TextfildLoginpage" onKeyPressed="#onkeyPresd" prefHeight="63.0" prefWidth="414.0" promptText="Password">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="414.0" layoutY="-44.0" prefHeight="233.0" prefWidth="1184.0" text="Wellcome to  the gym system" textFill="#59657c" underline="true" AnchorPane.topAnchor="-44.0">
+         <font>
+            <Font name="System Bold Italic" size="83.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtenLoginpage" layoutX="1574.0" layoutY="893.0" mnemonicParsing="false" onAction="#enterButtenloginpage" prefHeight="63.0" prefWidth="179.0" text="Enter">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

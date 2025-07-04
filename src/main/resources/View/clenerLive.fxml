@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchorpane" prefHeight="640.0" prefWidth="899.0" style="-fx-background-color: #7F8FA6FF; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.ClennerLive">
+   <children>
+      <Pane layoutX="25.0" layoutY="95.0" prefHeight="428.0" prefWidth="850.0" style="-fx-background-color: F2F2F2; -fx-background-radius: 20; -fx-border-color: #000000; -fx-border-radius: 20;" />
+      <Label layoutX="311.0" layoutY="23.0" prefHeight="94.0" prefWidth="390.0" text="    Additional live ">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="215.0" prefHeight="54.0" prefWidth="122.0" text="Cleaner Id :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCleanerId" layoutX="440.0" layoutY="215.0" prefHeight="54.0" prefWidth="275.0" />
+      <Button fx:id="btnSave" layoutX="739.0" layoutY="425.0" mnemonicParsing="false" onAction="#OnActionSaveButten" prefHeight="54.0" prefWidth="106.0" style="-fx-border-color: #000000;" text="Save" />
+   </children>
+</AnchorPane>

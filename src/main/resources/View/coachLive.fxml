@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchorpane" prefHeight="615.0" prefWidth="852.0" style="-fx-background-color: 7F8FA6FF; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.coachLive">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="668.0" layoutX="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imege/10220028.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="252.0" layoutY="59.0" prefHeight="67.0" prefWidth="275.0" text="Coches Lives">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="193.0" prefHeight="45.0" prefWidth="176.0" text="Coach Attendance  :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCoachId" layoutX="389.0" layoutY="193.0" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: purple; -fx-border-radius: 10;" />
+      <Button fx:id="btnSave" layoutX="592.0" layoutY="370.0" mnemonicParsing="false" onAction="#on_action_btnSave" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #ffffff; -fx-border-color: purple; -fx-border-radius: 10; -fx-background-radius: 10;" text="Save">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="Anchorpane" prefHeight="1010.0" prefWidth="1724.0" style="-fx-background-color: #4E413B;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.EmployeeManagement">
+   <children>
+      <!-- AnchorPane where other content will be loaded dynamically -->
+      <AnchorPane fx:id="secoundAnchorpane" layoutY="43.0" prefHeight="988.0" prefWidth="1725.0" style="-fx-background-color: #70a1ff;" />
+
+      <!-- Top Menu Bar -->
+      <HBox prefHeight="43.0" prefWidth="1169.0" style="-fx-background-color: #FF8426;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <MenuBar prefHeight="40.0" prefWidth="1952.0" style="-fx-background-color: #636e72;">
+               <menus>
+                  <!-- Cleaners Management Menu -->
+                  <Menu mnemonicParsing="false" text="Cleaners Management">
+                     <items>
+                        <MenuItem fx:id="add_Cleaners" mnemonicParsing="false" onAction="#add_Cleaners_on_action" text="Add Cleaners" />
+                        <MenuItem fx:id="Delete_Cleaners" mnemonicParsing="false" onAction="#Delete_Cleaners_on_action" text="Delete Cleaners" />
+                     </items>
+                  </Menu>
+      
+                  <!-- Employee Lives Menu -->
+                  <Menu mnemonicParsing="false" text="Live Management">
+                     <items>
+                        <MenuItem fx:id="Coach_Lives_id" mnemonicParsing="false" onAction="#Coaches_Lives_on_action" text="Coach Lives" />
+                        <MenuItem fx:id="Cleaners_Lives_id" mnemonicParsing="false" onAction="#Cleaners_Lives_on_action" text="Cleaners Lives" />
+                     </items>
+                  </Menu>
+      
+                  <!-- Coaches Management Menu -->
+                  <Menu mnemonicParsing="false" text="Coaches Management">
+                     <items>
+                        <MenuItem fx:id="add_coach" mnemonicParsing="false" onAction="#add_coach_on_action" text="Add Coach" />
+                        <MenuItem fx:id="delete_coach" mnemonicParsing="false" onAction="#delete_coach_on_action" text="Delete Coach" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="menuid" mnemonicParsing="false" text="Employee Payment">
+                     <items>
+                        <MenuItem fx:id="PaymentID" mnemonicParsing="false" onAction="#Payment_on_action" text="Payment" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

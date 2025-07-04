@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpaneOne" prefHeight="1023.0" prefWidth="1441.0" style="-fx-background-radius: 20; -fx-border-radius: 40;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.InventoryController">
+   <children>
+      <AnchorPane fx:id="anchorpaneTwo" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: A29BFEFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="145.0">
+         <children>
+            <ImageView fitHeight="653.0" fitWidth="665.0" layoutX="26.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imege/inwent.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="840.0" layoutY="307.0" prefHeight="159.0" prefWidth="545.0" style="-fx-background-color: purple; -fx-border-color: white; -fx-border-width: 10;" text="wellcome to the Inventory" textFill="WHITE">
+               <font>
+                  <Font name="DejaVuMathTeXGyre-Regular" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="246.0" fitWidth="264.0" layoutX="640.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imege/fun.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="144.0" prefWidth="1441.0" spacing="100.0" style="-fx-border-radius: 10; -fx-background-color: A29BFEFF; -fx-background-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="145.0" prefWidth="68.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <HBox onMousePressed="#on_mouse_action_for_addSuplayer" prefHeight="50.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="180.0" text="ADD  SUPLIERS" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <HBox fx:id="btnAddItems" onMousePressed="#on_mouse_Add_items" prefHeight="40.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="111.0" prefWidth="180.0" text="ADD ITEMS" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <HBox fx:id="btnPlaceOder" onMousePressed="#On_mouse_action_place_oder" prefHeight="62.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="111.0" prefWidth="180.0" text="PLACE ORDER" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

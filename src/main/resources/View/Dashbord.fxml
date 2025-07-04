@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancpane1formenupage" maxHeight="1440.0" maxWidth="2161.0" minHeight="887.0" minWidth="1387.0" prefHeight="1010.0" prefWidth="1920.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.Dashbord">
+   <children>
+
+      <VBox alignment="TOP_CENTER" layoutY="26.0" prefHeight="974.0" prefWidth="307.0" spacing="40.0" style="-fx-background-color: #4a69bd; -fx-border-radius: 20; -fx-border-color: #dfe4ea; -fx-border-width: 4; -fx-background-radius: 20;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="974.0" prefWidth="297.0" style="-fx-background-color: #4a69bd; -fx-background-radius: 20 20 0 0;">
+               <children>
+                  <Label prefWidth="20.0" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #EEEFE1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1e3799; -fx-border-width: 4;">
+                     <graphic>
+                        <ImageView fitHeight="121.0" fitWidth="230.0">
+                           <image>
+                              <Image url="@../imege/sxss.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label prefWidth="20.0" />
+               </children>
+            </HBox>
+
+            <Button fx:id="btnSystemUserManegment" mnemonicParsing="false" onAction="#clikButtenSystemUserManegment" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: b6ff17; -fx-border-radius: 10;" text="User Manage" textFill="#b6ff17">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btncustormerManegment" mnemonicParsing="false" onAction="#clikButtencustormerManegment" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10;" text="Custormer Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btnEmployeeManegment" mnemonicParsing="false" onAction="#clikButtenEmployeeManegment" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ffffff;" text="Employee Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="Inventory_Management_Id" mnemonicParsing="false" onAction="#Inventory_Management_On_action" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="Inventory Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btnManegeExsasais" mnemonicParsing="false" onAction="#manegeExsasais_on_action" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="Managem exercise  " textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btnCheneMassegeAoutogenaret" mnemonicParsing="false" onMouseClicked="#clickbtnToSend_massege" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="Send massage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+            <Button fx:id="btnviewMonthlyriport" mnemonicParsing="false" onAction="#clik_on_action_Monthlyriport" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="View Monthly Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnviewMonthlyriport1" mnemonicParsing="false" onAction="#clik_on_action_Monthlyriport" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #4a69bd;" textFill="#273246">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="Btn_Logout" mnemonicParsing="false" onAction="#Logout_on_action" prefHeight="47.0" prefWidth="250.0" style="-fx-background-color: #1e3799; -fx-background-radius: 10; -fx-border-color: #ffffff; -fx-border-radius: 10;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Button>
+
+         </children>
+      </VBox>
+
+            <AnchorPane fx:id="ancpaneWrite" layoutX="427.0" layoutY="26.0" prefHeight="974.0" prefWidth="1608.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="26.0" />
+      <Label fx:id="lableForTime" layoutX="1590.0" layoutY="-2.0" prefHeight="34.0" prefWidth="256.0" text="Label" textFill="#908282">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

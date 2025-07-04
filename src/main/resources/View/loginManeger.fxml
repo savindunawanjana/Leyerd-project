@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Anchorpane" maxHeight="1440.0" maxWidth="2161.0" minHeight="887.0" minWidth="1387.0" prefHeight="1010.0" prefWidth="1920.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.loginManeger">
+
+    <children>
+      <ImageView fitHeight="1043.0" fitWidth="660.0" layoutX="6.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-33.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1260.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../imege/nathana-reboucas-enaNfAjiDGg-unsplash.jpg" />
+         </image>
+      </ImageView>
+        <!-- Title -->
+        <Label alignment="CENTER" layoutX="306.0" layoutY="40.0" prefHeight="71.0" prefWidth="792.0" text="Manager Login">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+
+        <!-- Login Button -->
+        <Button fx:id="btnLogin" layoutX="960.0" layoutY="448.0" onAction="#ON_action__btn" onKeyPressed="#ON_KEY_PRES_LOGIN" prefHeight="44.0" prefWidth="140.0" text="Login" />
+      <HBox layoutX="466.0" layoutY="243.0" prefHeight="21.0" prefWidth="531.0">
+         <children>
+      
+              <!-- Password Field -->
+              <Label prefHeight="34.0" prefWidth="183.0" text="Password :">
+                  <font>
+                      <Font name="System Bold Italic" size="21.0" />
+                  </font>
+              </Label>
+            <TextField fx:id="txtPassworsd" prefHeight="34.0" prefWidth="316.0" promptText="Enter password" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

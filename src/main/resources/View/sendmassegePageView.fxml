@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1161.0" prefWidth="1970.0" style="-fx-background-color: #C4E1E6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.sendMassegPageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="116.0" prefWidth="300.0" spacing="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="sendShedulToCustormerId" alignment="CENTER" onMouseClicked="#on_sendShedulToCustormer_mouse_clicked" prefHeight="88.0" prefWidth="400.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="303.0" text="Send Schedule to Customer" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="editAoutoGenareteMassegeId" alignment="CENTER" onMouseClicked="#on_edit_aouto_genaret_massege_mouse_clicked" prefHeight="88.0" prefWidth="420.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="316.0" text="Edit Monthly Message" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="sendmonthlymassegeId1" alignment="CENTER" onMouseClicked="#on_sendMonthlymassege_mouse_clicked" prefHeight="88.0" prefWidth="400.0">
+               <children>
+                  <HBox prefHeight="50.0" prefWidth="232.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: F4E7E1; -fx-border-color: #4b6584; -fx-border-width: 4;">
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imege/placeOder.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" prefHeight="80.0" prefWidth="303.0" text="SendMonthly Message" textFill="#4b6584">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator layoutX="3.0" layoutY="117.0" prefHeight="0.0" prefWidth="1970.0" />
+      <AnchorPane fx:id="AnchorPane" layoutY="124.0" prefHeight="1036.0" prefWidth="1973.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="116.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AncorPane" prefHeight="936.0" prefWidth="1461.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.EditOtoJenaretMassege">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="485.0" layoutY="21.0" prefHeight="52.0" prefWidth="528.0" text="                                 Update massege  " textFill="#510a0a">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="butnSaveMassege" layoutX="1244.0" layoutY="797.0" mnemonicParsing="false" onAction="#Buttensave_on_action" onKeyPressed="#on_key_pressed" prefHeight="32.0" prefWidth="114.0" text="Save" />
+      <ImageView fitHeight="421.0" fitWidth="638.0" layoutX="663.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imege/massege.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="468.0" prefHeight="200.0" prefWidth="1192.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="435.0" text="Preview  -&gt;">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblmasseg" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="68.0" prefWidth="1332.0" style="-fx-border-color: #000000;" text="Happy birthady savindu, you have a 10% offer for this month from your gym" textFill="#652222">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="5.0" prefWidth="1199.0" style="-fx-background-color: #00000;" />
+            <HBox prefHeight="50.0" prefWidth="1193.0">
+               <children>
+                  <Label prefHeight="52.0" prefWidth="350.0" text="Write your massege for Custormer  :">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textfildmassege" prefHeight="54.0" prefWidth="1048.0" promptText="Hi savindu this month you..." />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

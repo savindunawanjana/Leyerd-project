@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="824.0" prefWidth="1344.0" style="-fx-background-color: #7F8FA6FF; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.Addcoach">
+   <children>
+      <Label layoutX="573.0" layoutY="20.0" prefHeight="71.0" prefWidth="324.0" text="Add coach">
+         <font>
+            <Font size="61.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="188.0" prefHeight="40.0" prefWidth="124.0" text=" coach Id :" textFill="#2f1515">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="455.0" prefHeight="40.0" prefWidth="175.0" text=" coach Email adress :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="371.0" prefHeight="40.0" prefWidth="175.0" text=" coach pone number :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="287.0" prefHeight="40.0" prefWidth="152.0" text=" coach name :">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textcoachId" layoutX="618.0" layoutY="188.0" prefHeight="40.0" prefWidth="311.0" style="-fx-border-color: #000000; -fx-background-color: #dcdde1;" />
+      <TextField fx:id="textcoachName" layoutX="618.0" layoutY="287.0" prefHeight="40.0" prefWidth="311.0" style="-fx-border-color: #000000; -fx-background-color: #dcdde1;" />
+      <TextField fx:id="coachNumber" layoutX="618.0" layoutY="371.0" prefHeight="40.0" prefWidth="311.0" style="-fx-border-color: #000000; -fx-background-color: #dcdde1;" />
+      <TextField fx:id="coachEmailadressId" layoutX="618.0" layoutY="455.0" onKeyPressed="#on_key_presd" prefHeight="40.0" prefWidth="311.0" style="-fx-border-color: #000000; -fx-background-color: #dcdde1;" />
+      <Button fx:id="btnsave" layoutX="946.0" layoutY="582.0" mnemonicParsing="false" onAction="#buttenONaction" prefHeight="54.0" prefWidth="118.0" style="-fx-background-radius: 10; -fx-border-color: #000000;" text="Save">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Pane fx:id="NavigetedeletepageId" layoutX="1123.0" layoutY="549.0" onMouseClicked="#on_mouse_click" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fx:id="s" fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imege/img.icons8.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="60.0" layoutX="85.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imege/sss.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

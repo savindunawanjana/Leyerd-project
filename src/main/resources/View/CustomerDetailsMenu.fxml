@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancCustomerDetailsMenu" prefHeight="970.0" prefWidth="1724.0" style="-fx-background-color: #a29bfe; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.CustomerDetailsMenuController">
+   <children>
+      <TableView fx:id="tableId" layoutX="407.0" layoutY="315.0" prefHeight="500.0" prefWidth="1008.0">
+        <columns>
+          <TableColumn fx:id="Colam_custormerId" prefWidth="75.0" text="custermer idnumber" />
+          <TableColumn fx:id="Colam_ExpayerDateId" prefWidth="75.0" text="Expire date" />
+            <TableColumn fx:id="Colam_ValidnomberofmonthId" prefWidth="75.0" text="Valid nomber of month" />
+            <TableColumn fx:id="Colam_systemuserId" prefWidth="75.0" text="system user" />
+            <TableColumn fx:id="Colam_paymentDateId" prefWidth="75.0" text="payment date" />
+            <TableColumn fx:id="Colam_gevapumudalpramanayaId" prefWidth="75.0" text="Payments" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="407.0" layoutY="86.0" prefHeight="98.0" prefWidth="583.0" text="Customer details">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      <Pane layoutX="115.0" layoutY="409.0" onMouseClicked="#onDoor_custormerManeg" prefHeight="200.0" prefWidth="217.0" style="-fx-background-color: #273c75; -fx-background-radius: 10;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="138.0" prefHeight="31.0" prefWidth="193.0" text="Customer Manage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="109.0" fitWidth="123.0" layoutX="39.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imege/door-8-256.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

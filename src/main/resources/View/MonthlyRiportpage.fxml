@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1067.0" prefWidth="2119.0" style="-fx-background-color: A29BFEFF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.MonthlyRiportpageController">
+   <children>
+      <Pane layoutX="70.0" layoutY="160.0" prefHeight="747.0" prefWidth="1477.0" style="-fx-border-color: #000000; -fx-border-radius: 20; -fx-border-width: 2;">
+         <children>
+            <Button fx:id="viewRiportId" layoutX="1051.0" layoutY="431.0" mnemonicParsing="false" onAction="#On_riport_action" prefHeight="44.0" prefWidth="176.0" style="-fx-background-radius: 7; -fx-border-color: #000000;" text=" View report">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Separator layoutX="-8.0" layoutY="99.0" prefHeight="7.0" prefWidth="2077.0" />
+      <Label layoutX="580.0" layoutY="26.0" prefHeight="63.0" prefWidth="388.0" text="monthly report" underline="true">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="778.0" fitWidth="850.0" layoutX="312.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imege/riportMonthly.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

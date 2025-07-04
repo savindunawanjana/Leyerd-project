@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancpanesecondLogin" minHeight="1440.0" minWidth="2161.0" prefHeight="549.0" prefWidth="781.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.lk.ijse.projectgym.demo76promax.Controller.ownerAndmanegerLoginPage">
+   <children>
+      <ImageView fitHeight="1440.0" fitWidth="2161.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imege/5073414.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bottonOwnerlogin" layoutX="742.0" layoutY="551.0" mnemonicParsing="false" onAction="#clickButtonOwnerdotoDashbordpage" prefHeight="51.0" prefWidth="397.0" text="Owner Login" />
+      <Button fx:id="bottonmanegerLoginPage" layoutX="742.0" layoutY="624.0" mnemonicParsing="false" onAction="#clickButtonManegerdotoDashbordpage" prefHeight="51.0" prefWidth="397.0" text="Maneger Login" />
+      <Button fx:id="bottonRegistretion" layoutX="742.0" layoutY="698.0" mnemonicParsing="false" onAction="#clickButtonRegitretiondotoDashbordpage" prefHeight="51.0" prefWidth="397.0" text="Registrtion" />
+      <Label alignment="CENTER" layoutX="625.0" layoutY="43.0" prefHeight="143.0" prefWidth="587.0" text="Login" textFill="#6f5050" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="68.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBacknuttontoback" prefHeight="55.0" prefWidth="143.0" style="-fx-background-color: #5F99AE;" text="&lt;=">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <Bloom threshold="1.0" />
+   </effect>
+</AnchorPane>
